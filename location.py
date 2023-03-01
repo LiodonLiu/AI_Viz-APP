@@ -1,3 +1,4 @@
+import stanza
 from stanza.server import CoreNLPClient
 import os
 from PIL import Image, ImageDraw, ImageFont
@@ -20,6 +21,9 @@ from typing import Tuple
 # import language_tool_python
 
 def locate(input_text):
+    stanza.install_corenlp() # install CoreNLP if not installed
+    
+    
     # tool = language_tool_python.LanguageTool('en-US')
     myflag = 0
     # input_text = "I found an ice cream near the door, and a monkey on the house."
