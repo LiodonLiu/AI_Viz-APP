@@ -17,14 +17,14 @@ from under import under
 from near import near
 from typing import List
 from typing import Tuple
-import language_tool_python
+# import language_tool_python
 
 def locate(input_text):
-    tool = language_tool_python.LanguageTool('en-US')
+    # tool = language_tool_python.LanguageTool('en-US')
     myflag = 0
     # input_text = "I found an ice cream near the door, and a monkey on the house."
-    input_text = tool.correct(input_text) 
-    print("Corrected input text:")
+    # input_text = tool.correct(input_text) 
+    # print("Corrected input text:")
     print(input_text)
     # format: ("if", "part1", keyword, part1, id)
     class Complete_Info_Phrase:
