@@ -1,6 +1,5 @@
 ## ?对于compund名词（ice cream）的处理发生问题？
 
-from asyncio.windows_events import NULL
 from stanza.server import CoreNLPClient
 import language_tool_python
 tool = language_tool_python.LanguageTool('en-US')
@@ -96,14 +95,14 @@ def extraction(ann):
                                 source = token_word[deps[1]-1] + " " + token_word[deps[0]-1]
                                 searching_texts.remove(source)
                             else:
-                                source = NULL
+                                source = "NULL"
                             if(edge.target in deps):
                                 target = token_word[deps[1]-1] + " " + token_word[deps[0]-1]
                                 searching_texts.remove(target)
                             else:
                                 target = token_word[edge.target-1]
                             
-                            if(source is not NULL):
+                            if(source!="NULL"):
                                 prep_compound.append([source,target,dep])
                                 usedwords.append(edge.source-1)
                                 usedwords.append(edge.target-1)
