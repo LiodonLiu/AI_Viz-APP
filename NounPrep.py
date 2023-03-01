@@ -1,8 +1,6 @@
 ## ?对于compund名词（ice cream）的处理发生问题？
 
 from stanza.server import CoreNLPClient
-import language_tool_python
-tool = language_tool_python.LanguageTool('en-US')
 
 def extraction(ann):
     token_word: dict = {} # token:word对应字典
