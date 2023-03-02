@@ -2,7 +2,7 @@ import streamlit as st
 from location import locate
 from PIL import Image
 
-input_text = st.text_input('input text:', 'A sentence of story')
+input_text = st.text_input('input text:', 'An ice cream near the door')
 
 locate(input_text)
 
