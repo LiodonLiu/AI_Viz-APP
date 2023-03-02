@@ -115,7 +115,7 @@ def use(search_string_, output_, filename_):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    signal.signal(signal.SIGINT, backup_history)
+    # signal.signal(signal.SIGINT, backup_history)
 
     try:
         download_history = open(os.path.join(output_dir, 'download_history.pickle'), 'rb')
