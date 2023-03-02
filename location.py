@@ -44,7 +44,7 @@ def locate(input_text):
 
     ann = None
     with CoreNLPClient(
-            annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref', 'openie'],
+            annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref', 'natlog','openie'],
             # annotators=['depparse', 'openie', 'tokenize', 'pos'],
             timeout=30000,
             memory='4G') as client:
