@@ -1,9 +1,8 @@
-import stanza
 from stanza.server import CoreNLPClient
 import os
 from PIL import Image, ImageDraw, ImageFont
 import random
-import bbid
+from bing_downloader import BingImages
 from NounPrep import extraction
 from changewhite import change
 from enhancedDemoRefactored import Edge
@@ -18,17 +17,14 @@ from under import under
 from near import near
 from typing import List
 from typing import Tuple
-# import language_tool_python
+import language_tool_python
 
 def locate(input_text):
-    stanza.install_corenlp() # install CoreNLP if not installed
-    
-    
-    # tool = language_tool_python.LanguageTool('en-US')
+    tool = language_tool_python.LanguageTool('en-US')
     myflag = 0
     # input_text = "I found an ice cream near the door, and a monkey on the house."
-    # input_text = tool.correct(input_text) 
-    # print("Corrected input text:")
+    input_text = tool.correct(input_text) 
+    print("Corrected input text:")
     print(input_text)
     # format: ("if", "part1", keyword, part1, id)
     class Complete_Info_Phrase:
@@ -44,8 +40,7 @@ def locate(input_text):
 
     ann = None
     with CoreNLPClient(
-            # annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref', 'natlog','openie'],
-            # annotators=['depparse', 'openie', 'tokenize', 'pos'],
+            # annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref','natlog', 'openie'],
             annotators=['tokenize','ssplit','pos','lemma','depparse','natlog', 'openie'],
             timeout=30000,
             memory='4G') as client:
@@ -152,7 +147,8 @@ def locate(input_text):
         for i in range(len(complete_info_phrases)):
             img_filename = (complete_info_phrases[i].part_text).replace("'", "")
             if os.path.exists('./foundImages/' + img_filename + '.jpg') is False:
-                bbid.use(search_string_=complete_info_phrases[i].part_text + ' emoji' + ' clipart', output_='./foundImages', filename_ = img_filename)
+                imagesearch = BingImages(complete_info_phrases[i].part_text + ' clipart', count=20).get()
+                BingImages.download(imagesearch , img_filename,'./foundImages')
             new_phrases_obj[i] = (complete_info_phrases[i].keyword, complete_info_phrases[i].part_text, img_filename)
 
         print(str(new_phrases_obj))
@@ -191,7 +187,8 @@ def locate(input_text):
         for i in range(len(results)):
             img_filename = (results[i]).replace("'", "")
             if os.path.exists('./foundImages/' + img_filename + '.jpg') is False:
-                bbid.use(search_string_=results[i] + ' emoji' + ' clipart', output_='./foundImages', filename_ = img_filename)
+                imagesearch = BingImages(results[i] + ' clipart', count=20).get()
+                BingImages.download(imagesearch , img_filename,'./foundImages')            
             change('./foundImages/' + img_filename + '.jpg') #将RGBA与杂色背景的RGB图片更改为白色背景的RGB图片
 
         #开始计算画布长度
@@ -281,5 +278,5 @@ def locate(input_text):
         #### Remove exact duplicates and object duplicates, then reduce to max_phrases total phrases ####
 
 if __name__ == "__main__":
-    input_text = "I found an ice cream near the door, and a monkey on the house."
+    input_text = "panda around the wolf."
     locate(input_text)
