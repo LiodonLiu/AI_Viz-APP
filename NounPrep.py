@@ -48,7 +48,7 @@ def extraction(ann):
             print(rela_obj)
 
     for token in word_pos:                                                # compound
-        if(token[1] in ["NN","NNS"]):
+        if(token[1] in ["NN","NNS","NNP"]):
             for edge in deps_compound:
                 if(token[0] == edge[1]-1):
                     if(edge[0]>edge[1]):
