@@ -8,7 +8,7 @@ streamlit = "*"
 stanza = "*"
 torch = "*"
 language_tool_python = "*"
-bs4 = "*"
+beautifulsoup4 = "*"
 
 [dev-packages]
 
