@@ -9,6 +9,7 @@ stanza = "*"
 torch = "*"
 language_tool_python = "*"
 beautifulsoup4 = "*"
+lxml = "*"
 
 [dev-packages]
 
