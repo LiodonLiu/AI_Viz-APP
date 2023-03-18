@@ -39,35 +39,10 @@ def main():
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>④图片生成后，可点击“下载”按钮下载图片</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>⑤使用过程中有任何问题，欢迎点击上方“问题反馈”按钮与我们联系！</font></div>''', unsafe_allow_html=True)
     st.markdown('''<style>
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
-      position:absolute;left:80%;top:-50px;
-      border-color: white;background-color: white;border-style: unset
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
+      border-color: white;background-color: white;border-style: unset;
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > a > button{
-      position:absolute;left:80%;top:-30px;border-color: #4478C3;background-color: white;border-radius: 10px
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label > div > div > div > p{
-      font-family: YouYuan;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div.css-12ttj6m.epcbefy1 > div:nth-child(1) > div > div:nth-child(1) > div > label > div > p{
-      font-family: YouYuan;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div.css-12ttj6m.epcbefy1 > div:nth-child(1) > div > div:nth-child(2) > div > div > button > div > p{
-      font-family: YouYuan;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div.css-12ttj6m.epcbefy1{
-      border: 1px solid #4478C3;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div.css-12ttj6m.epcbefy1 > div:nth-child(1) > div > div:nth-child(2) > div > div > button{
-      border: 1px solid #4478C3;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div:nth-child(7) > div > button{
-      border: 1px solid #4478C3;
-      }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-91z34k.egzxvld4 > div:nth-child(1) > div > div:nth-child(7) > div > button > div > p{
-      font-family: YouYuan;
-      }
-      </style>''', unsafe_allow_html=True)
+    </style>''', unsafe_allow_html=True)
 
 if __name__=="__main__":
     main()
