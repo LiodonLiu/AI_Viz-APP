@@ -5,16 +5,16 @@ from PIL import Image
 def main():
     st.markdown('''<a href="http://www.baidu.com">
         <button>
-        <font face="华文琥珀" size=2>问题反馈</font>
+        <font face="幼圆" size=2>问题反馈</font>
         </button>
     </a>''',unsafe_allow_html=True)
     st.markdown('''<a href="https://note.youdao.com/s/NGGNVkbn">
         <button>
-        <font face="幼圆" size=2>隐私政策</font>
+        <font face="幼圆"><u>隐私政策</u></font>
         </button>
     </a>''',unsafe_allow_html=True)
     placeholder = st.empty()
-    if placeholder.checkbox("开始使用"):
+    if placeholder.checkbox("同意"):
           placeholder.empty()
           st.title("AI-VIZ")
           form1 = st.form(key='my_form1')
@@ -33,14 +33,26 @@ def main():
                       )
     else:
         st.markdown('''<font face="幼圆" size=7><b>使用详情见下</b></font>''', unsafe_allow_html=True)
-        st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>①在“输入”框中输入<u>英文</u>语句</font></div>''', unsafe_allow_html=True)
+        st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>①在“输入”框中输入<b>英文</b>语句</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>②点击下方“提交”按钮</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>③静待图片生成</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>④图片生成后，可点击“下载”按钮下载图片</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>⑤使用过程中有任何问题，欢迎点击上方“问题反馈”按钮与我们联系！</font></div>''', unsafe_allow_html=True)
     st.markdown('''<style>
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
-      border-color: white;background-color: white;border-style: unset;
+      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > a > button{
+      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer{
+      color: rgba(0,0,0,0);background: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer > a{
+      cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label{
+      position: fixed;bottom: 0px;
       }
     </style>''', unsafe_allow_html=True)
 
