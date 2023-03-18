@@ -5,7 +5,7 @@ from PIL import Image
 def main():
     st.markdown('''<a href="http://www.baidu.com">
         <button>
-        <font face="幼圆" size=2>问题反馈</font>
+        <font face="华文琥珀" size=2>问题反馈</font>
         </button>
     </a>''',unsafe_allow_html=True)
     st.markdown('''<a href="https://note.youdao.com/s/NGGNVkbn">
