@@ -45,13 +45,13 @@ def main():
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > p > font{
-      position: fixed;top: 56px;right: 7px;
+      position: fixed;top: 56px;right: 7px;z-index:-1;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(10) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 5px;left: 73px;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(11) > div > div > p > font > u{
-      position: fixed;bottom: 8px;left: 80px;
+      position: fixed;bottom: 8px;left: 80px;z-index:-1;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer{
       color: rgba(0,0,0,0);background: rgba(0,0,0,0);
