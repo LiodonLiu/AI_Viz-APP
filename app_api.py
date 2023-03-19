@@ -8,6 +8,7 @@ def main():
         <font face="幼圆" size=2>问题反馈</font>
         </button>
     </a>''',unsafe_allow_html=True)
+    st.markdown('''<font face="幼圆" size=2>问题反馈</font></a>''',unsafe_allow_html=True)
     placeholder = st.empty()
     if placeholder.checkbox("同意"):
           placeholder.empty()
