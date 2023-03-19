@@ -39,6 +39,7 @@ def main():
             <font face="幼圆"><u>隐私政策</u></font>
             </button>
             </a>''',unsafe_allow_html=True)
+        st.markdown('''<font face="幼圆"><u>隐私政策</u></font></a>''',unsafe_allow_html=True)
     st.markdown('''<style>
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;
