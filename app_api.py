@@ -65,6 +65,21 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label > div > div > div > p{
       font-family: YouYuan;
       }
+    #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-14xtw13.e8zbici0{
+      color: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-14xtw13.e8zbici0 > div:nth-child(1) > button{
+      cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-14xtw13.e8zbici0 > div:nth-child(2) > button{
+      cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-14xtw13.e8zbici0 > div:nth-child(3) > button{
+      cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
+      }
+    #MainMenu > button{
+      cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
+      }
     </style>''', unsafe_allow_html=True)
 
 if __name__=="__main__":
