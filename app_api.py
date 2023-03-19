@@ -43,6 +43,9 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;
       }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > p > font{
+      position: fixed;top: 50px;right: 0px;
+      }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(9) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 0px;left: 68px;
       }
