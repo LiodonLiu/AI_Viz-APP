@@ -3,7 +3,7 @@ from location import locate
 from PIL import Image
 
 def main():
-    st.markdown('''<a href="http://www.baidu.com">
+    st.markdown('''<a href="https://docs.qq.com/form/page/DRXdqRnl4THpWVXFM#/fill">
         <button>
         <font face="幼圆" size=2>问题反馈</font>
         </button>
