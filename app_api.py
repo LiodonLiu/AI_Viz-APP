@@ -42,13 +42,13 @@ def main():
         st.markdown('''<font face="幼圆"><u>隐私政策</u></font></a>''',unsafe_allow_html=True)
     st.markdown('''<style>
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
-      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;z-index:1;
+      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;z-index:1;color: rgba(0,0,0,0);
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > p > font{
       position: fixed;top: 56px;right: 7px;z-index:0;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(10) > div > div > a > button{
-      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 5px;left: 73px;z-index:1;
+      border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 5px;left: 73px;z-index:1;color: rgba(0,0,0,0);
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(11) > div > div > p > font > u{
       position: fixed;bottom: 8px;left: 80px;z-index:0;
