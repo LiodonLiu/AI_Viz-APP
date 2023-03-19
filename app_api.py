@@ -47,8 +47,11 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > p > font{
       position: fixed;top: 56px;right: 7px;
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(9) > div > div > a > button{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(10) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 0px;left: 68px;
+      }
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(11) > div > div > p > font > u{
+      position: fixed;bottom: 0px;left: 68px;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer{
       color: rgba(0,0,0,0);background: rgba(0,0,0,0);
@@ -56,7 +59,7 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer > a{
       cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > label{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label{
       position: fixed;bottom: 4px;left: 15px;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label > div > div > div > p{
