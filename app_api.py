@@ -8,11 +8,6 @@ def main():
         <font face="幼圆" size=2>问题反馈</font>
         </button>
     </a>''',unsafe_allow_html=True)
-    st.markdown('''<a href="https://note.youdao.com/s/NGGNVkbn">
-        <button>
-        <font face="幼圆"><u>隐私政策</u></font>
-        </button>
-    </a>''',unsafe_allow_html=True)
     placeholder = st.empty()
     if placeholder.checkbox("同意"):
           placeholder.empty()
@@ -38,6 +33,11 @@ def main():
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>③静待图片生成</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>④图片生成后，可点击“下载”按钮下载图片</font></div>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>⑤使用过程中有任何问题，欢迎点击上方“问题反馈”按钮与我们联系！</font></div>''', unsafe_allow_html=True)
+        st.markdown('''<a href="https://note.youdao.com/s/NGGNVkbn">
+            <button>
+            <font face="幼圆"><u>隐私政策</u></font>
+            </button>
+            </a>''',unsafe_allow_html=True)
     st.markdown('''<style>
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(1) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;top: 50px;right: 0px;
