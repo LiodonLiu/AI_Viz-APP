@@ -17,16 +17,19 @@ def main():
           input_text = form1.text_input('输入：', 'An ice cream near the door')
           submit_button = form1.form_submit_button(label = '提交')
           if submit_button:
-            locate(input_text)
-            image = Image.open('final_canvas.jpg')
-            st.image(image, caption='final_canvas') 
-            with open("final_canvas.jpg", "rb") as file:
-                btn = st.download_button(
-                        label="下载",
-                        data=file,
-                        file_name=input_text + '.jpg',
-                        mime="image/jpg"
-                      )
+            try:
+                locate(input_text)
+                image = Image.open('final_canvas.jpg')
+                st.image(image, caption='final_canvas') 
+                with open("final_canvas.jpg", "rb") as file:
+                    btn = st.download_button(
+                            label="下载",
+                            data=file,
+                            file_name=input_text + '.jpg',
+                            mime="image/jpg"
+                          )
+            except:
+                st.error('运行出错', icon="🚨")
     else:
         st.markdown('''<font face="幼圆" size=7><b>使用详情见下</b></font>''', unsafe_allow_html=True)
         st.markdown('''<div style="text-indent:2em;"><font face="幼圆" size=3>①在“输入”框中输入<b>英文</b>语句</font></div>''', unsafe_allow_html=True)
