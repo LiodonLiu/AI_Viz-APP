@@ -13,11 +13,32 @@ def main():
     if placeholder.checkbox("同意"):
           placeholder.empty()
           st.title("AI-VIZ")
-          form1 = st.form(key='my_form1')
-          input_text = form1.text_input('输入：', 'An ice cream near the door')
-          submit_button = form1.form_submit_button(label = '提交')
-          if submit_button:
-            try:
+          tab1, tab2= st.tabs(["稳定模式", "自由模式"])
+          with tab1:
+            st.header("稳定模式")
+            option = st.selectbox('请选择例句',('There is an ice cream near the door.', 'I found a tea on the table.', 'There are trees around the cat.'))
+            choose_button = st.button(label = '确认')
+            if choose_button:
+              try:
+                locate(option)
+                image = Image.open('final_canvas.jpg')
+                st.image(image, caption='final_canvas') 
+                with open("final_canvas.jpg", "rb") as file:
+                    btn = st.download_button(
+                            label="下载",
+                            data=file,
+                            file_name=option + '.jpg',
+                            mime="image/jpg"
+                          )
+              except:
+                st.error('运行出错', icon="🚨")
+          with tab2:
+            st.header("自由模式")
+            form1 = st.form(key='my_form1')
+            input_text = form1.text_input('输入：')
+            submit_button = form1.form_submit_button(label = '提交')
+            if submit_button:
+              try:
                 locate(input_text)
                 image = Image.open('final_canvas.jpg')
                 st.image(image, caption='final_canvas') 
@@ -28,7 +49,7 @@ def main():
                             file_name=input_text + '.jpg',
                             mime="image/jpg"
                           )
-            except:
+              except:
                 st.error('运行出错', icon="🚨")
     else:
         st.markdown('''<font face="幼圆" size=7><b>使用详情见下</b></font>''', unsafe_allow_html=True)
