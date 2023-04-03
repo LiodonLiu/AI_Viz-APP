@@ -16,7 +16,11 @@ def main():
           tab1, tab2= st.tabs(["稳定模式", "自由模式"])
           with tab1:
             st.header("稳定模式")
-            option = st.selectbox('请选择例句',('There is an ice cream near the door.', 'I found a tea on the table.', 'There are trees around the cat.'))
+            option1 = st.selectbox('请选择名词A',('ice cream', 'table', 'tree', 'door', 'house', 'cat', 'tea'))
+            option2 = st.selectbox('请选择名词B',('ice cream', 'table', 'tree', 'door', 'house', 'cat', 'tea'))
+            option3 = st.selectbox('请选择二者介词关系',('beneath','before','around','behind','inside','near','on','under','among'))
+            option = option1 + ' ' + option3 + ' ' + option2
+            st.write('输入语句为：'+ option)
             choose_button = st.button(label = '确认')
             if choose_button:
               try:
