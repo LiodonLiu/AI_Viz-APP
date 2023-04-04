@@ -244,7 +244,7 @@ def locate(input_text):
                 img = Image.open('./foundImages/' + new_phrases_obj[i + Boundlength][1] + '.jpg')
                 img = img.resize((500, 500))               #调整图片大小
                 canvas_img.paste(img, (x_offset + 150, y_offset))#在画布上输出图片
-                d = ImageDraw.Draw(canvas_img)             #在图片下方显示对应的图片名
+                # d = ImageDraw.Draw(canvas_img)             #在图片下方显示对应的图片名
                 d.text((x_offset + 150, 1700), new_phrases_obj[i + Boundlength][1], font=word_font, fill=(50, 50, 50))
                 x_offset += new_phrases_obj[i + Boundlength][2]
             except Exception as e:
