@@ -111,7 +111,7 @@ def main():
       cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div > div > img{
-      position: fixed;top: 52px;left: 0px
+      position: fixed;top: 45px;left: 0px
       }
     </style>''', unsafe_allow_html=True)
 
