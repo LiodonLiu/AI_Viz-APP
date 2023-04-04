@@ -160,8 +160,8 @@ def locate(input_text):
                 img = Image.open('./foundImages/' + phrase[2] + '.jpg')
                 img = img.resize((500, 500))
                 canvas_img.paste(img, (x_offset, y_offset))
-                d = ImageDraw.Draw(canvas_img)
-                d.text((x_offset, y_offset+550), phrase[1], font=word_font, fill=(50, 50, 50))
+                #d = ImageDraw.Draw(canvas_img)
+                #d.text((x_offset, y_offset+550), phrase[1], font=word_font, fill=(50, 50, 50))
                 x_offset += 800
                 counter += 1
             except Exception as e:
