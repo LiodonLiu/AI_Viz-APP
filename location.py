@@ -249,8 +249,8 @@ def locate(input_text):
                 x_offset += new_phrases_obj[i + Boundlength][2]
             except Exception as e:
                 print("Img error " + str(e))
-        d = ImageDraw.Draw(canvas_img)             #在图片下方显示对应的图片名
-        d.text((150, 1750), input_text, font=word_font, fill=(50, 50, 50))
+        #d = ImageDraw.Draw(canvas_img)             #在图片下方显示对应的图片名
+        #d.text((150, 1750), input_text, font=word_font, fill=(50, 50, 50))
         canvas_img.save('final_canvas.jpg')
         print("Done")
         #### Remove exact duplicates and object duplicates, then reduce to max_phrases total phrases ####
