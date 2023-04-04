@@ -18,7 +18,7 @@ def main():
             st.header("稳定模式")
             option1 = st.selectbox('请选择名词A',('ice cream', 'table', 'tree', 'door', 'house', 'cat', 'tea'))
             option2 = st.selectbox('请选择名词B',('ice cream', 'table', 'tree', 'door', 'house', 'cat', 'tea'))
-            option3 = st.selectbox('请选择二者介词关系',('beneath','before','around','behind','inside','near','on','under','among'))
+            option3 = st.selectbox('请选择二者介词关系',('beneath','before','around','behind','near','on','under'))
             option = option1 + ' ' + option3 + ' ' + option2
             st.write('输入语句为：'+ option)
             choose_button = st.button(label = '确认')
