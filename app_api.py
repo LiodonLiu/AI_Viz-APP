@@ -9,6 +9,8 @@ def main():
         </button>
     </a>''',unsafe_allow_html=True)
     st.markdown('''<font face="幼圆" size=2>问题反馈</font></a>''',unsafe_allow_html=True)
+    icon = Image.open('icon.jpg')
+    st.image(icon, caption='final_canvas')
     placeholder = st.empty()
     if placeholder.checkbox("同意"):
           placeholder.empty()
