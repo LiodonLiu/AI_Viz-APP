@@ -25,7 +25,7 @@ def main():
             st.write('输入语句为：'+ option)
             choose_button = st.button(label = '确认')
             if choose_button:
-              #try:
+              try:
                 locate(option)
                 image = Image.open('final_canvas.jpg')
                 st.image(image, caption='final_canvas') 
