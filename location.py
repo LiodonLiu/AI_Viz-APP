@@ -27,6 +27,7 @@ def locate(input_text):
     myflag = 0
     # input_text = "I found an ice cream near the door, and a monkey on the house."
     input_text = tool.correct(input_text) 
+    input_text = input_text.lower()
     print("Corrected input text:")
     print(input_text)
     # format: ("if", "part1", keyword, part1, id)
