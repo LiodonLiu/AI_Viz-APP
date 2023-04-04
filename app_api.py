@@ -2,7 +2,6 @@ import streamlit as st
 from location import locate
 from PIL import Image
 
-@st.cache
 def main():
     st.markdown('''<a href="https://docs.qq.com/form/page/DRXdqRnl4THpWVXFM#/fill">
         <button>
