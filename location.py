@@ -2,6 +2,7 @@ from stanza.server import CoreNLPClient
 import os
 from PIL import Image, ImageDraw, ImageFont
 import random
+from resize import resize
 from bing_downloader import BingImages
 from NounPrep import extraction
 from changewhite import change
@@ -137,8 +138,12 @@ def locate(input_text):
             if os.path.exists('./foundImages/' + img_filename + '.jpg') is False:
                 imagesearch = BingImages(complete_info_phrases[i].part_text + ' clipart', count=20).get()
                 BingImages.download(imagesearch , img_filename,'./foundImages')
+                change('./foundImages/' + img_filename + '.jpg')
+                resize(img_filename)
             new_phrases_obj[i] = (complete_info_phrases[i].keyword, complete_info_phrases[i].part_text, img_filename)
+
         print(str(new_phrases_obj))
+
         #### Creating final image ####
         word_font = ImageFont.truetype('./font/Arial.ttf', 40)
             
@@ -170,8 +175,11 @@ def locate(input_text):
             img_filename = (results[i]).replace("'", "")
             if os.path.exists('./foundImages/' + img_filename + '.jpg') is False:
                 imagesearch = BingImages(results[i] + ' clipart', count=20).get()
-                BingImages.download(imagesearch , img_filename,'./foundImages')            
+                BingImages.download(imagesearch , img_filename,'./foundImages') 
+                change('./foundImages/' + img_filename + '.jpg')
+                resize(img_filename)           
             change('./foundImages/' + img_filename + '.jpg') #将RGBA与杂色背景的RGB图片更改为白色背景的RGB图片
+
         #开始计算画布长度
         canvas_width = 0
         step = 0
