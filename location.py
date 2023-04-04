@@ -45,7 +45,7 @@ def locate(input_text):
             # annotators=['tokenize','ssplit','pos','lemma','ner', 'parse', 'depparse','coref','natlog', 'openie'],
             annotators=['tokenize','ssplit','pos','lemma','depparse','natlog', 'openie'],
             timeout=30000,
-            memory='4G') as client:
+            memory='8G') as client:
         ann = client.annotate(input_text) # all dependency annotator info https://universaldependencies.org/u/overview/enhanced-syntax.html and here https://universaldependencies.org/u/dep/index.html
     tokens = []
     my_edges = []
