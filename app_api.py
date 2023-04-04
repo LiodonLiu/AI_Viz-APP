@@ -34,8 +34,8 @@ def main():
                             file_name=option + '.jpg',
                             mime="image/jpg"
                           )
-              except:
-                st.error('运行出错', icon="🚨")
+              #except:
+               # st.error('运行出错', icon="🚨")
           with tab2:
             st.header("自由模式")
             form1 = st.form(key='my_form1')
