@@ -16,6 +16,10 @@ def resize(filename):
         size = 500
     elif filename == 'cat':
         size = 100
+    elif filename == 'monkey':
+        size = 100
+    elif filename == 'wolf':
+        size = 100
     elif filename == 'tea':
         size = 50
     else:
