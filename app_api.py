@@ -77,10 +77,10 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(2) > div > div > p > font{
       position: fixed;top: 56px;right: 7px;z-index:0;
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(11) > div > div > a > button{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(10) > div > div > a > button{
       border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);position: fixed;bottom: 5px;left: 73px;z-index:1;color: rgba(0,0,0,0);
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(12) > div > div > p > font > u{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(11) > div > div > p > font > u{
       position: fixed;bottom: 8px;left: 80px;z-index:0;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer{
@@ -89,10 +89,10 @@ def main():
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > footer > a{
       cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(4) > div > label{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label{
       position: fixed;bottom: 9px;left: 20px;
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(4) > div > label > div > div > div > p{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > label > div > div > div > p{
       font-family: YouYuan;
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > header > div.css-14xtw13.e8zbici0{
@@ -110,7 +110,7 @@ def main():
     #MainMenu > button{
       cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
       }
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div > div > img{
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(5) > div > div > div > img{
       position: absolute;top: 0px;right: 0px;z-index: 2;
       }
     </style>''', unsafe_allow_html=True)
