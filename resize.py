@@ -18,6 +18,8 @@ def resize(filename):
         size = 100
     elif filename == 'tea':
         size = 50
+    else:
+        size = 500
 
     img = img.resize((size, size))
     final_img.paste(img, (250-size//2, 500-size))
