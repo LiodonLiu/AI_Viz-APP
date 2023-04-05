@@ -9,12 +9,12 @@ def main():
         </button>
     </a>''',unsafe_allow_html=True)
     st.markdown('''<font face="幼圆" size=2>问题反馈</font></a>''',unsafe_allow_html=True)
-    icon = Image.open('icon.png')
-    st.image(icon,width = 120)
     placeholder = st.empty()
     if placeholder.checkbox("同意"):
           placeholder.empty()
           st.title("AI-VIZ")
+          icon = Image.open('icon.png')
+          st.image(icon,width = 120)
           tab1, tab2= st.tabs(["稳定模式", "自由模式"])
           with tab1:
             st.header("稳定模式")
