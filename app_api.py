@@ -10,7 +10,7 @@ def main():
     </a>''',unsafe_allow_html=True)
     st.markdown('''<font face="幼圆" size=2>问题反馈</font></a>''',unsafe_allow_html=True)
     icon = Image.open('icon.png')
-    st.image(icon,width = 50)
+    st.image(icon,width = 150)
     placeholder = st.empty()
     if placeholder.checkbox("同意"):
           placeholder.empty()
@@ -111,7 +111,7 @@ def main():
       cursor: not-allowed;pointer-events: none;color: rgba(0,0,0,0);
       }
     #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-1y4p8pa.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div > div > img{
-      position: fixed;top: 45px;left: 0px;z-index: 2;
+      position: absolute;top: 45px;left: 0px;z-index: 2;
       }
     </style>''', unsafe_allow_html=True)
 
